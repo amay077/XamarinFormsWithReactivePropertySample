@@ -8,6 +8,7 @@ namespace FormsWithRxProperty.Pages
     {
         public FirstPage()
         {
+            // UI
             var entry = new Entry
             {
                 Text = "Hello, Forms!",
@@ -18,7 +19,7 @@ namespace FormsWithRxProperty.Pages
             var label = new Label
             {
                 VerticalOptions = LayoutOptions.Center,
-                HorizontalOptions = LayoutOptions.FillAndExpand,
+                HorizontalOptions = LayoutOptions.CenterAndExpand,
             };
 
             var button = new Button
@@ -27,11 +28,6 @@ namespace FormsWithRxProperty.Pages
                 VerticalOptions = LayoutOptions.Center,
                 HorizontalOptions = LayoutOptions.FillAndExpand,
             };
-
-            this.BindingContext = new FirstViewModel();
-            entry.SetBinding<FirstViewModel>(Entry.TextProperty, vm=>vm.HogeName.Value);
-            label.SetBinding<FirstViewModel>(Label.TextProperty, vm=>vm.HogeName.Value);
-            button.SetBinding<FirstViewModel>(Button.CommandProperty, vm=>vm.Clear);
 
             this.Content = new StackLayout
             {
@@ -46,6 +42,12 @@ namespace FormsWithRxProperty.Pages
                     button
                 }
             };
+
+            // ViewModel との Binding
+            this.BindingContext = new FirstViewModel();
+            entry.SetBinding<FirstViewModel>(Entry.TextProperty, vm=>vm.InputText.Value);
+            label.SetBinding<FirstViewModel>(Label.TextProperty, vm=>vm.DisplayText.Value);
+            button.SetBinding<FirstViewModel>(Button.CommandProperty, vm=>vm.Clear);
         }
     }
 }

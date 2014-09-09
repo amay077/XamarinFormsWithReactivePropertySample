@@ -69,7 +69,7 @@ Global
 		{E01C53E6-ED39-468A-B9A4-69A4ACB11FB7}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = iOS\FormsWithRxProperty.iOS.csproj
+		StartupItem = Android\FormsWithRxProperty.Android.csproj
 		Policies = $0
 		$0.DotNetNamingPolicy = $1
 		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
