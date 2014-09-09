@@ -1,9 +1,35 @@
 Sample for Xamarin.Forms and ReactiveProperty
 ======================================
 
-## ScreenShot
+# SCREENSHOT
 
 ![](https://dl.dropboxusercontent.com/u/264530/qiita/using_xamarin_forms_with_reactiveproperty_03.gif)
+
+# CODE
+
+```csharp:FirstViewModel.cs
+// Property and Command implementations by Rx
+this.DisplayText = _inputText
+    .Delay(TimeSpan.FromSeconds(1))
+    .Select(x => x.ToUpper())
+    .ToReactiveProperty();
+
+this.Clear = _inputText
+    .Select(x => x.Equals("clear"))
+    .ToReactiveCommand();
+this.Clear.Subscribe(_ => _inputText.Value = String.Empty);
+```
+
+```csharp:FirstPage.cs
+// Bind to FirstViewModel
+this.BindingContext = new FirstViewModel();
+entry.SetBinding<FirstViewModel>(Entry.TextProperty, vm=>vm.InputText.Value);
+label.SetBinding<FirstViewModel>(Label.TextProperty, vm=>vm.DisplayText.Value);
+button.SetBinding<FirstViewModel>(Button.CommandProperty, vm=>vm.Clear);
+```
+
+
+# LINKS
 
 ## ReactiveProperty
 
