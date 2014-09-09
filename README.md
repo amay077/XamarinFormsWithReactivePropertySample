@@ -7,6 +7,8 @@ Sample for Xamarin.Forms and ReactiveProperty
 
 # CODE
 
+## ViewModel
+
 ```csharp
 // Property and Command implementations by Rx
 this.DisplayText = _inputText
@@ -20,8 +22,10 @@ this.Clear = _inputText
 this.Clear.Subscribe(_ => _inputText.Value = String.Empty);
 ```
 
+## Page(Xamarin.Forms)
+
 ```csharp
-// Bind to FirstViewModel
+// Bind to ViewModel
 this.BindingContext = new FirstViewModel();
 entry.SetBinding<FirstViewModel>(Entry.TextProperty, vm=>vm.InputText.Value);
 label.SetBinding<FirstViewModel>(Label.TextProperty, vm=>vm.DisplayText.Value);
