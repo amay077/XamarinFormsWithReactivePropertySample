@@ -7,7 +7,7 @@ Sample for Xamarin.Forms and ReactiveProperty
 
 # CODE
 
-```csharp FirstViewModel.cs
+```csharp
 // Property and Command implementations by Rx
 this.DisplayText = _inputText
     .Delay(TimeSpan.FromSeconds(1))
@@ -20,7 +20,7 @@ this.Clear = _inputText
 this.Clear.Subscribe(_ => _inputText.Value = String.Empty);
 ```
 
-```csharp FirstPage.cs
+```csharp
 // Bind to FirstViewModel
 this.BindingContext = new FirstViewModel();
 entry.SetBinding<FirstViewModel>(Entry.TextProperty, vm=>vm.InputText.Value);
