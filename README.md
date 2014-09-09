@@ -7,7 +7,7 @@ Sample for Xamarin.Forms and ReactiveProperty
 
 ## ReactiveProperty
 
-* ReactiveProperty オーバービュー - かずきのBlog@hatena http://okazuki.hatenablog.com/entry/2014/05/07/014133
+* [ReactiveProperty オーバービュー - かずきのBlog@hatena](http://okazuki.hatenablog.com/entry/2014/05/07/014133)
 * [ReactiveProperty - MVVM Extensions for Rx - Download: ReactiveProperty v1.0](https://reactiveproperty.codeplex.com/releases/view/132232)
 * [neue cc - ReactiveProperty : Rx + MVVMへの試み](http://neue.cc/2011/08/26_341.html)
 * [ReactivePropertyを使いたい人のための、ReactiveExtensions入門（その１） | 泥庭](http://yone64.wordpress.com/2014/06/20/reactiveproperty%E3%82%92%E4%BD%BF%E3%81%84%E3%81%9F%E3%81%84%E4%BA%BA%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%80%81reactiveextensions%E5%85%A5%E9%96%80%EF%BC%88%E3%81%9D%E3%81%AE%EF%BC%91%EF%BC%89/)
