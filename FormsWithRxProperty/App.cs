@@ -8,7 +8,7 @@ namespace FormsWithRxProperty
     {
         public static Page GetMainPage()
         {	
-            return new FirstPage();
+            return new NavigationPage(new FirstPage());
         }
     }
 }

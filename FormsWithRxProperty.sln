@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsWithRxProperty.iOS", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsWithRxProperty.Android", "Android\FormsWithRxProperty.Android.csproj", "{BD2B00B1-E30A-4F0F-9CF6-BDE2568D22B0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxPropertyTest", "RxPropertyTest\RxPropertyTest.csproj", "{051938B7-4E4A-4CE4-9D95-6992D253C5A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,22 @@ Global
 		AppStore|iPhone = AppStore|iPhone
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{051938B7-4E4A-4CE4-9D95-6992D253C5A2}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{051938B7-4E4A-4CE4-9D95-6992D253C5A2}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{051938B7-4E4A-4CE4-9D95-6992D253C5A2}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{051938B7-4E4A-4CE4-9D95-6992D253C5A2}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{051938B7-4E4A-4CE4-9D95-6992D253C5A2}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{051938B7-4E4A-4CE4-9D95-6992D253C5A2}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{051938B7-4E4A-4CE4-9D95-6992D253C5A2}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{051938B7-4E4A-4CE4-9D95-6992D253C5A2}.Debug|iPhone.Build.0 = Debug|iPhone
+		{051938B7-4E4A-4CE4-9D95-6992D253C5A2}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{051938B7-4E4A-4CE4-9D95-6992D253C5A2}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{051938B7-4E4A-4CE4-9D95-6992D253C5A2}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
+		{051938B7-4E4A-4CE4-9D95-6992D253C5A2}.Release|Any CPU.Build.0 = Release|iPhoneSimulator
+		{051938B7-4E4A-4CE4-9D95-6992D253C5A2}.Release|iPhone.ActiveCfg = Release|iPhone
+		{051938B7-4E4A-4CE4-9D95-6992D253C5A2}.Release|iPhone.Build.0 = Release|iPhone
+		{051938B7-4E4A-4CE4-9D95-6992D253C5A2}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{051938B7-4E4A-4CE4-9D95-6992D253C5A2}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{6714DEEB-9BF6-40A8-9D42-922879752F52}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
 		{6714DEEB-9BF6-40A8-9D42-922879752F52}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
 		{6714DEEB-9BF6-40A8-9D42-922879752F52}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
@@ -69,7 +87,7 @@ Global
 		{E01C53E6-ED39-468A-B9A4-69A4ACB11FB7}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Android\FormsWithRxProperty.Android.csproj
+		StartupItem = iOS\FormsWithRxProperty.iOS.csproj
 		Policies = $0
 		$0.DotNetNamingPolicy = $1
 		$1.DirectoryNamespaceAssociation = PrefixedHierarchical

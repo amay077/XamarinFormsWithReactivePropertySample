@@ -4,13 +4,12 @@ using FormsWithRxProperty.ViewModels;
 
 namespace FormsWithRxProperty.Pages
 {
-    public class FirstPage : ContentPage
+    public class SecondPage : ContentPage
     {
-        public FirstPage()
+        public SecondPage()
         {
-            this.Title = "First Page";
+            this.Title = "Second Page";
 
-            // UI
             var entry = new Entry
             {
                 Text = "Hello, Forms!",
@@ -31,35 +30,26 @@ namespace FormsWithRxProperty.Pages
                 HorizontalOptions = LayoutOptions.FillAndExpand,
             };
 
-            var buttonNextPage = new Button
-            {
-                Text = "Goto Next",
-                VerticalOptions = LayoutOptions.Center,
-                HorizontalOptions = LayoutOptions.FillAndExpand,
-            };
-
             this.Content = new StackLayout
             {
                 Padding = new Thickness(50f),
                 VerticalOptions = LayoutOptions.Start,
                 HorizontalOptions = LayoutOptions.Fill,
                 Orientation = StackOrientation.Vertical,
-                Children =
+                Children = 
                 {
                     entry,
                     label,
-                    button,
-                    buttonNextPage,
-                }
+                    button
+                },
             };
 
             // ViewModel との Binding
-            this.BindingContext = new FirstViewModel();
-            entry.SetBinding<FirstViewModel>(Entry.TextProperty, vm=>vm.InputText.Value);
-            label.SetBinding<FirstViewModel>(Label.TextProperty, vm=>vm.DisplayText.Value);
-            button.SetBinding<FirstViewModel>(Button.CommandProperty, vm=>vm.Clear);
+            this.BindingContext = new SecondViewModel();
+            entry.SetBinding<SecondViewModel>(Entry.TextProperty, vm=>vm.MyName);
+            label.SetBinding<SecondViewModel>(Label.TextProperty, vm=>vm.LowerText.Value);
+            button.SetBinding<SecondViewModel>(Button.CommandProperty, vm=>vm.ResetCommand);
 
-            buttonNextPage.Clicked += (_, __) => this.Navigation.PushAsync(new SecondPage());
         }
     }
 }
